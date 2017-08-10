@@ -26,6 +26,11 @@ module TicTacToe
       @current_player, @other_player = @other_player, @current_player
     end
 
+    def game_over_message
+      return "#{@current_player.name} has won. #{@other_player.name} lost because they are bad at games." if board.game_over == :winner
+      return "The game ended in a tie." if board.game_over == :draw
+    end
+
     def start_game
       puts "#{current_player.name} has randomly been selected as the first player."
       while true
@@ -33,7 +38,7 @@ module TicTacToe
         puts ''
         player_turn
         if board.game_over
-          puts "game over"
+          puts game_over_message
           board.print_grid
           print "Play again? (Type in 'Y' to play again): "
           response = gets.chomp.upcase

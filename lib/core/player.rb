@@ -29,15 +29,15 @@ module TicTacToe
         print "#{self.name}'s turn (#{symbol}): "
         input = gets.chomp.to_i
         break if input.between?(1, 9) && is_empty(input) && make_mark(input)
-        puts "#{self}: Invalid turn."
+        puts "#{self.name}, that's an invalid input."
       end
     end
   end
 
   class ComputerPlayer < Player
     def turn
-      print "#{self}'s Turn (#{symbol}): "
-      puts ''
+      print "#{self.name}'s Turn (#{symbol}): "
+      puts '----------'
       place_symbol
     end
 

@@ -1,21 +1,9 @@
-Starting a game of tic tac toe.
+Quick Tic Tac Toe game.
 
-The game has the following classes:
+Basic single player and versus dumb AI.
 
-Game class
-Who's turn?
-Changing turns?
-Staring and ending the game
+Plan is to add in more intelligent AI going forward.
 
-Board class
-Prints the board/grid.
-If the board has a cell with a value, prints that value instead of a blank.
-
-Cell Class
-Holds our cell values if any.
-
-Player Class
-> Human and Computer sub classes
-
-Computer Player Class
-AI to pick a spot.
+To run tests:  
+`bundle`  
+`rspec spec`

@@ -4,7 +4,7 @@ require 'byebug'
 include TicTacToe
 
 puts 'Sup?'
-puts 'Play against a person or Joshuha?'
+puts 'Play against a person or Joshua?'
 puts '    1. Two-player game.'
 puts '    2. Game against Joshua.'
 print 'Input (1 or 2):     '
